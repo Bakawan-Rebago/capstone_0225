@@ -1,6 +1,5 @@
 import streamlit as stl
 import pandas as pd
-from st_keyup import st_keyup
 
 stl.title("DASHBOARD")
 stl.subheader("It is always fun to be here!")

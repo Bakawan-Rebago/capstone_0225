@@ -19,10 +19,10 @@ try:
     data = pd.read_csv(stl.file_uploader("Upload a CSV or Excel file", type=["csv"]))
 
     columns = data.columns.tolist()
-    xaxis, yaxis = stl.columns(2)
-    with xaxis:
+    xAxis, yAxis = stl.columns(2)
+    with xAxis:
         xh = stl.selectbox("x",columns)
-    with yaxis:
+    with yAxis:
         yh = stl.selectbox("y", columns)
 
     chart_type = stl.selectbox("Choose a chart type:", chartList, index=0)
